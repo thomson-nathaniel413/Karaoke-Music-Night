@@ -24,13 +24,13 @@ Partial Class frmKaraoke
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmKaraoke))
         Me.pnlKaraoke = New System.Windows.Forms.Panel()
-        Me.lblKaraoke = New System.Windows.Forms.Label()
-        Me.lblPurchaseInputIndicator = New System.Windows.Forms.Label()
-        Me.lblCost = New System.Windows.Forms.Label()
-        Me.txtPurchaseInput = New System.Windows.Forms.TextBox()
-        Me.btnCost = New System.Windows.Forms.Button()
-        Me.btnClear = New System.Windows.Forms.Button()
         Me.cboPurchaseType = New System.Windows.Forms.ComboBox()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnCost = New System.Windows.Forms.Button()
+        Me.txtPurchaseInput = New System.Windows.Forms.TextBox()
+        Me.lblCost = New System.Windows.Forms.Label()
+        Me.lblPurchaseInputIndicator = New System.Windows.Forms.Label()
+        Me.lblKaraoke = New System.Windows.Forms.Label()
         Me.pnlKaraoke.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,55 +49,16 @@ Partial Class frmKaraoke
         Me.pnlKaraoke.Size = New System.Drawing.Size(497, 449)
         Me.pnlKaraoke.TabIndex = 0
         '
-        'lblKaraoke
+        'cboPurchaseType
         '
-        Me.lblKaraoke.AutoSize = True
-        Me.lblKaraoke.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblKaraoke.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblKaraoke.Location = New System.Drawing.Point(135, 60)
-        Me.lblKaraoke.Name = "lblKaraoke"
-        Me.lblKaraoke.Size = New System.Drawing.Size(218, 29)
-        Me.lblKaraoke.TabIndex = 0
-        Me.lblKaraoke.Text = "Karaoke Music Night"
-        '
-        'lblPurchaseInputIndicator
-        '
-        Me.lblPurchaseInputIndicator.AutoSize = True
-        Me.lblPurchaseInputIndicator.Font = New System.Drawing.Font("Calibri", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPurchaseInputIndicator.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblPurchaseInputIndicator.Location = New System.Drawing.Point(204, 205)
-        Me.lblPurchaseInputIndicator.Name = "lblPurchaseInputIndicator"
-        Me.lblPurchaseInputIndicator.Size = New System.Drawing.Size(90, 19)
-        Me.lblPurchaseInputIndicator.TabIndex = 1
-        Me.lblPurchaseInputIndicator.Text = "placeholder"
-        '
-        'lblCost
-        '
-        Me.lblCost.AutoSize = True
-        Me.lblCost.Font = New System.Drawing.Font("Calibri", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCost.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblCost.Location = New System.Drawing.Point(216, 379)
-        Me.lblCost.Name = "lblCost"
-        Me.lblCost.Size = New System.Drawing.Size(74, 19)
-        Me.lblCost.TabIndex = 2
-        Me.lblCost.Text = "total cost"
-        '
-        'txtPurchaseInput
-        '
-        Me.txtPurchaseInput.Location = New System.Drawing.Point(220, 259)
-        Me.txtPurchaseInput.Name = "txtPurchaseInput"
-        Me.txtPurchaseInput.Size = New System.Drawing.Size(45, 26)
-        Me.txtPurchaseInput.TabIndex = 3
-        '
-        'btnCost
-        '
-        Me.btnCost.Font = New System.Drawing.Font("Calibri", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCost.Location = New System.Drawing.Point(84, 326)
-        Me.btnCost.Name = "btnCost"
-        Me.btnCost.Size = New System.Drawing.Size(100, 30)
-        Me.btnCost.TabIndex = 4
-        Me.btnCost.Text = "Total Cost"
-        Me.btnCost.UseVisualStyleBackColor = True
+        Me.cboPurchaseType.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboPurchaseType.FormattingEnabled = True
+        Me.cboPurchaseType.Items.AddRange(New Object() {"Number of songs ($2.99 per song)", "Private karaoke room ($8.99 per hour)"})
+        Me.cboPurchaseType.Location = New System.Drawing.Point(84, 123)
+        Me.cboPurchaseType.Name = "cboPurchaseType"
+        Me.cboPurchaseType.Size = New System.Drawing.Size(337, 28)
+        Me.cboPurchaseType.TabIndex = 6
+        Me.cboPurchaseType.Text = "Customize your night"
         '
         'btnClear
         '
@@ -109,16 +70,55 @@ Partial Class frmKaraoke
         Me.btnClear.Text = "Clear Form"
         Me.btnClear.UseVisualStyleBackColor = True
         '
-        'cboPurchaseType
+        'btnCost
         '
-        Me.cboPurchaseType.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboPurchaseType.FormattingEnabled = True
-        Me.cboPurchaseType.Items.AddRange(New Object() {"Number of songs ($2.99 per song)", "Private karaoke room ($8.99 per hour)"})
-        Me.cboPurchaseType.Location = New System.Drawing.Point(84, 123)
-        Me.cboPurchaseType.Name = "cboPurchaseType"
-        Me.cboPurchaseType.Size = New System.Drawing.Size(337, 28)
-        Me.cboPurchaseType.TabIndex = 6
-        Me.cboPurchaseType.Text = "Customize your night"
+        Me.btnCost.Font = New System.Drawing.Font("Calibri", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCost.Location = New System.Drawing.Point(84, 326)
+        Me.btnCost.Name = "btnCost"
+        Me.btnCost.Size = New System.Drawing.Size(100, 30)
+        Me.btnCost.TabIndex = 4
+        Me.btnCost.Text = "Total Cost"
+        Me.btnCost.UseVisualStyleBackColor = True
+        '
+        'txtPurchaseInput
+        '
+        Me.txtPurchaseInput.Location = New System.Drawing.Point(220, 259)
+        Me.txtPurchaseInput.Name = "txtPurchaseInput"
+        Me.txtPurchaseInput.Size = New System.Drawing.Size(45, 26)
+        Me.txtPurchaseInput.TabIndex = 3
+        '
+        'lblCost
+        '
+        Me.lblCost.AutoSize = True
+        Me.lblCost.Font = New System.Drawing.Font("Calibri", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCost.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblCost.Location = New System.Drawing.Point(80, 376)
+        Me.lblCost.Name = "lblCost"
+        Me.lblCost.Size = New System.Drawing.Size(74, 19)
+        Me.lblCost.TabIndex = 2
+        Me.lblCost.Text = "total cost"
+        '
+        'lblPurchaseInputIndicator
+        '
+        Me.lblPurchaseInputIndicator.AutoSize = True
+        Me.lblPurchaseInputIndicator.Font = New System.Drawing.Font("Calibri", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPurchaseInputIndicator.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblPurchaseInputIndicator.Location = New System.Drawing.Point(80, 211)
+        Me.lblPurchaseInputIndicator.Name = "lblPurchaseInputIndicator"
+        Me.lblPurchaseInputIndicator.Size = New System.Drawing.Size(90, 19)
+        Me.lblPurchaseInputIndicator.TabIndex = 1
+        Me.lblPurchaseInputIndicator.Text = "placeholder"
+        '
+        'lblKaraoke
+        '
+        Me.lblKaraoke.AutoSize = True
+        Me.lblKaraoke.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblKaraoke.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblKaraoke.Location = New System.Drawing.Point(135, 60)
+        Me.lblKaraoke.Name = "lblKaraoke"
+        Me.lblKaraoke.Size = New System.Drawing.Size(218, 29)
+        Me.lblKaraoke.TabIndex = 0
+        Me.lblKaraoke.Text = "Karaoke Music Night"
         '
         'frmKaraoke
         '
