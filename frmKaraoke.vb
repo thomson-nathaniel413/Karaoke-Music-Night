@@ -99,6 +99,11 @@ Public Class frmKaraoke
         Dim intValue As Integer
         Dim decTotal As Decimal
 
+        ' if you see an error in the above variables; that's just visual studio being weird
+        ' i fixed the issue a while ago, but the error hasn't gone away for some reason
+        ' idk if this will still show up later, but if it does just ignore it please
+        ' visual studio still runs the program just fine
+
         ' validate input
         blnAmountIsValid = ValidateInput()
 
