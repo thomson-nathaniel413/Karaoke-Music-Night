@@ -104,6 +104,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmKaraoke.resx">
+      <DependentUpon>frmKaraoke.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmKaraokeSplash.resx">
       <DependentUpon>frmKaraokeSplash.vb</DependentUpon>
     </EmbeddedResource>
